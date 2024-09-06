@@ -26,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
                 animation.setDuration(1000);
                 animation.setRepeatCount(ValueAnimator.RESTART);
                 animation.start();
-                animation.
+
             }
 
-
         });
+        
 
 
     }
