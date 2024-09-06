@@ -45,6 +45,13 @@ public class MainActivity extends AppCompatActivity {
                 imgsunflower.animate().translationX(-200f).setDuration(500).start();
             }
         });
+        Button btnfadein = findViewById(R.id.btnfadein);
+        btnfadein.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btnfadein.
+            }
+        });
 
 
 

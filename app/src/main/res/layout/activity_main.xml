@@ -78,4 +78,28 @@
         app:layout_constraintVertical_bias="0.227"
         app:srcCompat="@drawable/vincent_van_gogh_three_sunflowers_f453" />
 
+    <Button
+        android:id="@+id/btnfadein"
+        android:layout_width="42dp"
+        android:layout_height="48dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.724" />
+
+    <Button
+        android:id="@+id/btnfadeout"
+        android:layout_width="41dp"
+        android:layout_height="45dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
