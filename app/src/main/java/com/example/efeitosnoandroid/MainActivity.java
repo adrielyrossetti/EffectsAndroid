@@ -3,6 +3,7 @@ package com.example.efeitosnoandroid;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.ObjectAnimator;
+import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
 import android.os.Bundle;
 import android.view.View;
@@ -49,7 +50,19 @@ public class MainActivity extends AppCompatActivity {
         btnfadein.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                btnfadein.
+                PropertyValuesHolder animacao1 = PropertyValuesHolder.ofFloat("alpha",70f,40f);
+                PropertyValuesHolder animacao2 = PropertyValuesHolder.ofFloat("x",0f, 250f);
+                PropertyValuesHolder animacao3 = PropertyValuesHolder.ofFloat("y",0f,260f);
+                ObjectAnimator animate = ObjectAnimator.ofPropertyValuesHolder(imgsunflower, animacao1, animacao2, animacao3).setDuration(1000);
+                animate.start();
+            }
+
+        });
+        Button btnvolta = findViewById(R.id.btnvolta);
+        btnvolta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imgsunflower.animate().translationX(25f).setDuration(500).start();
             }
         });
 
